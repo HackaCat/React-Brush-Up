@@ -1,0 +1,4 @@
+node_modules
+process.env
+package-lock.json
+src/base.js
