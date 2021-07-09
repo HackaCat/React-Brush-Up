@@ -95,7 +95,7 @@ class App extends React.Component {
     return (
       <div className="catch-of-the-day">
         <div className="menu">
-          <Header tagline="Cafe Puca" />
+          <Header tagline="Menu" />
           <ul className="items">
             {Object.keys(this.state.items).map(key => (
               <Item
@@ -120,6 +120,7 @@ class App extends React.Component {
           items={this.state.items}
           storeId={this.props.match.params.storeId}
         />
+        
       </div>
     );
   }

@@ -6,7 +6,7 @@ class AddItemForm extends React.Component {
   priceRef = React.createRef();
   statusRef = React.createRef();
   descRef = React.createRef();
-  imageRef = React.createRef();
+  imgRef = React.createRef();
 
   static propTypes = {
     addItem: PropTypes.func
@@ -20,7 +20,7 @@ class AddItemForm extends React.Component {
       price: parseFloat(this.priceRef.current.value),
       status: this.statusRef.current.value,
       desc: this.descRef.current.value,
-      image: this.imageRef.current.value
+      image: this.imgRef.current.value
     };
     this.props.addItem(item);
     // refresh the form
@@ -44,9 +44,9 @@ class AddItemForm extends React.Component {
         <textarea name="desc" ref={this.descRef} placeholder="Desc" />
         <input
           name="image"
-          ref={this.imageRef}
+          ref={this.imgRef}
           type="text"
-          placeholder="Image"
+          placeholder="image"
         />
         <button type="submit">+ Add item</button>
       </form>
